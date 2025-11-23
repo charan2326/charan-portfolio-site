@@ -1,8 +1,3 @@
-<!--
-  Charan Rachumalla - Web Portfolio (deployable)
-  Place profile photo at web-portfolio/assets/profile.jpg
-  Host via GitHub Pages, Netlify, or any static hosting
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +6,6 @@
     <title>Charan Rachumalla - Senior Platform / Integration Engineer</title>
     <link rel="icon" href="data:," />
     <style>
-        /* Reuse the same styling as portfolio.html for a self-contained site */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
         .container { max-width: 1000px; margin: 0 auto; background-color: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
@@ -66,8 +60,8 @@
         <div class="content">
             <section id="about">
                 <h3>About Me</h3>
-                <p class="about-text">Senior Data/Platform/Integration Engineer with 7+ years architecting and operating enterprise real-time streaming platforms and self-service tooling on Confluent Kafka across multi-cloud. I lead cross-functional initiatives, design fault-tolerant, high-throughput systems processing millions of events per second with 99.9% uptime, and turn complex requirements into secure, scalable solutions.</p>
-                <p class="about-text" style="margin-top: 15px;">Known for automation (CI/CD, credential lifecycle, monitoring/alerting), developer enablement, and strong stakeholder communication.</p>
+                <p class="about-text">Senior Data/Platform/Integration Engineer with 7+ years architecting and operating enterprise real-time streaming platforms and self-service tooling on data engineering with both batch processing and realtime streaming in big data using hadoop, aws, snowflake, databricks, Kafka across multi-cloud. I lead cross-functional initiatives, design fault-tolerant, high-throughput systems processing millions of events per second with 99.9% uptime, and turn complex requirements into secure, scalable solutions.</p>
+                <p class="about-text" style="margin-top: 15px;">Known for data pipelines to transport data from source to destination with automation (CI/CD, credential lifecycle, monitoring/alerting), developer enablement, and strong stakeholder communication.</p>
             </section>
             <section id="skills">
                 <h3>Technical Skills</h3>
@@ -76,7 +70,7 @@
                         <h5>Integration & Streaming</h5>
                         <ul>
                             <li>Apache Kafka (Confluent Platform/Cloud)</li>
-                            <li>Kafka Connect, Kafka Streams, ksqlDB, librdkafka</li>
+                            <li>Kafka Connect, Kafka Streams, ksqlDB, librdkafka, flink, tableflow</li>
                             <li>Avro & Schema Registry; topic design, ACLs, RBAC</li>
                             <li>Event-driven architecture, pub/sub, exactly-once</li>
                         </ul>
@@ -84,17 +78,17 @@
                     <div class="skill-category">
                         <h5>Programming & Frameworks</h5>
                         <ul>
-                            <li>Python, Shell/Bash, PySpark, SQL, YAML, HCL (Terraform)</li>
-                            <li>Flask, Django</li>
+                            <li>Python, Java, Go, Shell/Bash, PySpark, SQL, YAML, Terraform</li>
+                            <li>Flask, Django, SpringBoot</li>
                             <li>Avro, JSON, Parquet, CSV, XML</li>
-                            <li>Terraform, Ansible, Docker</li>
+                            <li>Terraform, Ansible, Docker, Kubernetes</li>
                         </ul>
                     </div>
                     <div class="skill-category">
                         <h5>Cloud & Platforms</h5>
                         <ul>
                             <li>AWS (Lambda, EC2, S3, SNS, CloudWatch, IAM, VPC)</li>
-                            <li>Ali Cloud (ALB, SLB, SLS), IBM Cloud Kubernetes</li>
+                            <li>Ali Cloud (ALB, SLB, SLS), Kubernetes</li>
                             <li>EKS/Kubernetes, Docker</li>
                             <li>CI/CD: Bamboo, Jenkins</li>
                         </ul>
@@ -102,7 +96,7 @@
                     <div class="skill-category">
                         <h5>Monitoring & Soft Skills</h5>
                         <ul>
-                            <li>CloudWatch, Prometheus, Grafana, Datadog, Splunk, Kibana</li>
+                            <li>CloudWatch, Prometheus, Grafana, Datadog, Splunk, SignalFx, Kibana</li>
                             <li>Technical leadership and mentoring</li>
                             <li>Stakeholder communication; Agile/Scrum & Kanban</li>
                         </ul>
@@ -118,8 +112,10 @@
                     <ul>
                         <li>Reduced deployment lead time from 2 days to ~10 minutes; enabled 100+ teams</li>
                         <li>85% fewer deployment errors through automated validations and idempotent operations</li>
+                        <li>Introduced realtime streaming using kafka topics, flink, splunk, tableflow for realtime dashboards.</li>
+                        <li>Providing realtime data as ingestion for AI systems.</li>
                     </ul>
-                    <div class="tech-tags"><span class="tech-tag">Confluent Cloud</span><span class="tech-tag">Ali Cloud</span><span class="tech-tag">Python</span><span class="tech-tag">Django</span><span class="tech-tag">Flask</span></div>
+                    <div class="tech-tags"><span class="tech-tag">Confluent Cloud</span><span class="tech-tag">Ali Cloud</span><span class="tech-tag">Python</span><span class="tech-tag">Java</span><span class="tech-tag">Flink</span><span class="tech-tag">Django</span><span class="tech-tag">Flask</span><span class="tech-tag">Terraform</span><span class="tech-tag">RAG</span><span class="tech-tag">LLM</span></div>
                 </div>
                 <div class="project">
                     <div class="project-header"><h4>CI/CD + IaC for Kafka Across Clouds</h4></div>
@@ -182,21 +178,21 @@
                         </ul>
                     </div>
                 </div>
-                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Addepto IT Solutions, Richmond, VA</p></div><p class="date">Apr 2021 – Feb 2022</p></div>
+                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Client (Capital One), Richmond, VA</p></div><p class="date">Apr 2021 – Feb 2022</p></div>
                     <ul>
                         <li>Designed multi‑tenant Kafka platform supporting 50+ applications with HA across AZs</li>
                         <li>Built Ansible automation and Shell toolkits for topic/ACL provisioning (4h → 15m)</li>
                         <li>Integrated Datadog/Kibana for lag, disk, and health metrics with proactive alerting</li>
                     </ul>
                 </div>
-                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Metrix IT Solutions, Richmond, VA</p></div><p class="date">Jun 2018 – Apr 2021</p></div>
+                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Client (Capital One), Richmond, VA</p></div><p class="date">Jun 2018 – Apr 2021</p></div>
                     <ul>
                         <li>Created Boto3 automation for EC2/S3/EMR/SNS; reduced AWS ops overhead by 70%</li>
                         <li>Implemented blue‑green deployments with Jenkins; zero‑downtime releases</li>
                         <li>Optimized Kafka throughput (3×) via batching, compression, and buffer tuning</li>
                     </ul>
                 </div>
-                <div class="experience-item"><div class="job-header"><div><h4>Python Developer</h4><p class="company">Metrix IT Solutions, Nashville, TN</p></div><p class="date">2017 – 2018</p></div>
+                <div class="experience-item"><div class="job-header"><div><h4>Python Developer</h4><p class="company">Client (Dollar General), Nashville, TN</p></div><p class="date">2017 – 2018</p></div>
                     <ul>
                         <li>Delivered Django web apps and data parsing/ETL frameworks (CSV, XML, JSON)</li>
                         <li>Integrated Python with legacy C using ctypes; reduced duplicate code by 60%</li>
